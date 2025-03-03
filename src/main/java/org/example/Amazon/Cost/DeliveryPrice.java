@@ -9,7 +9,6 @@ public class DeliveryPrice implements PriceRule {
     public double priceToAggregate(List<Item> cart) {
 
         int totalItems = cart.size();
-
         if(totalItems == 0)
             return 0;
         if(totalItems >= 1 && totalItems <= 3)

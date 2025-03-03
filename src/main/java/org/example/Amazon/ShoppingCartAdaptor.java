@@ -52,8 +52,12 @@ public class ShoppingCartAdaptor implements ShoppingCart {
     @Override
     public int numberOfItems() {
         return connection.withSql(() -> {
-            try(var ps = connection.getConnection().prepareStatement("select count(*) from shoppingcart")){
-                return ps.getFetchSize();
+            try(var ps = connection.getConnection().prepareStatement("select count(*) as count from shoppingcart")){ // Use count(*) AS count
+                var rs = ps.executeQuery();
+                if (rs.next()) {
+                    return rs.getInt("count");
+                }
+                return 0;
             }
         });
     }
