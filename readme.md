@@ -3,11 +3,11 @@
 ## Notes:
 The code for numberOfItems() in ShoppingCartAdaptor was incorrect. It was using ps.getFetchSize(), which doesn't return the number of rows in the table. It returns the fetch size which is set by JDBC. Fixed this issue. 
 ## Final GitHub Actions Workflow:
-https://github.com/samuel-ouzounian/SE333_Assignment_6/actions/runs/13639070980
-
+[https://github.com/samuel-ouzounian/SE333_Assignment_6/actions/runs/13639070980
+](https://github.com/samuel-ouzounian/SE333_Assignment_6/actions/runs/13639217506)
 ## Artifact Links:
-Checkstyle: https://github.com/samuel-ouzounian/SE333_Assignment_6/actions/runs/13639070980/artifacts/2684050677
-Jacoco: https://github.com/samuel-ouzounian/SE333_Assignment_6/actions/runs/13639070980/artifacts/2684051836
+Checkstyle: [https://github.com/samuel-ouzounian/SE333_Assignment_6/actions/runs/13639070980/artifacts/2684050677](https://github.com/samuel-ouzounian/SE333_Assignment_6/actions/runs/13639217506/artifacts/2684100011)
+Jacoco: [https://github.com/samuel-ouzounian/SE333_Assignment_6/actions/runs/13639070980/artifacts/2684051836](https://github.com/samuel-ouzounian/SE333_Assignment_6/actions/runs/13639217506/artifacts/2684101271)
 ## Classes skipped in testing:
 
 **Item.java**
