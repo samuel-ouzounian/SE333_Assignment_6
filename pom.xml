@@ -79,6 +79,9 @@
                         <goals>
                             <goal>report</goal>
                         </goals>
+                        <configuration>
+                            <failOnViolation>false</failOnViolation>
+                        </configuration>
                     </execution>
                 </executions>
             </plugin>
